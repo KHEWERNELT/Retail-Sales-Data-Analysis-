@@ -5,7 +5,7 @@
 
 ### Online Retail Dataset
 
-Análisis de datos transaccionales para identificar patrones de ventas y oportunidades comerciales.
+Análisis de datos transaccionales orientado a identificar patrones de ventas, comportamiento de productos y oportunidades comerciales.
 
 <br>
 
@@ -48,7 +48,7 @@ El proyecto utiliza el dataset **Online Retail**, un conjunto de datos transacci
 **Fuente:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online%2Bretail)  
 **Registros originales:** 541,909
 
-El dataset original contiene 8 variables relacionadas con las transacciones, incluyendo información sobre facturas, productos, cantidades, fechas, precios, clientes y países.
+El dataset contiene información transaccional relacionada con facturas, productos, cantidades, fechas, precios, clientes y países.
 
 
 
@@ -61,15 +61,15 @@ OnlineRetail.xlsx
        ↓
 01_exploracion_datos.ipynb
        ↓
-Identificación de problemas y criterios de limpieza
+Exploración e identificación de problemas
        ↓
 clean_data.py
        ↓
-data_clean.csv
+Dataset procesado
        ↓
 analisis_ventas.ipynb
        ↓
-Power Bi
+Power BI
 
 ```
 
@@ -114,7 +114,7 @@ Se analizó la evolución mensual de las unidades vendidas de determinados produ
 ## 📊 Dashboard
 
 El análisis se complementa con un dashboard interactivo desarrollado en **Power BI**, diseñado para presentar los principales indicadores y resultados del proyecto de forma visual.
-
+El archivo .pbix y una imagen de referencia del dashboard se encuentran disponibles en la carpeta dashboard/.
 
 ![Dashboard](dashboard/dashboard.png)
 
@@ -125,16 +125,17 @@ El análisis se complementa con un dashboard interactivo desarrollado en **Power
 ```text
 PROYECTO ANALISIS DE VENTAS
 │
-├── backup/
 ├── dashboard/
-├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── dashboard.png
+│   └── dashboard_ventas.pbix
+│
 ├── notebooks/
 │   ├── 01_exploracion_datos.ipynb
 │   └── analisis_ventas.ipynb
+│
 ├── scripts/
 │   └── clean_data.py
+│
 ├── .gitignore
 └── README.md
 
@@ -143,12 +144,14 @@ PROYECTO ANALISIS DE VENTAS
 
 Para reproducir el análisis:
 
-1. Descargar el dataset **Online Retail** desde su fuente original y colocarlo localmente en `data/raw/`.
-2. Ejecutar el script `scripts/clean_data.py` para generar el dataset procesado en `data/processed/`.
-3. Abrir `notebooks/analisis_ventas.ipynb`.
-4. Ejecutar las celdas del notebook para reproducir el análisis.
+1. Descargar el dataset **Online Retail** desde su fuente original.
+2. Colocar el archivo `OnlineRetail.xlsx` en una carpeta local destinada a los datos.
+3. Ejecutar el script `scripts/clean_data.py`.
+4. Abrir `notebooks/01_exploracion_datos.ipynb` para revisar el proceso de exploración.
+5. Abrir `notebooks/analisis_ventas.ipynb` para reproducir el análisis.
+6. Utilizar el archivo de Power BI disponible en `dashboard/` para explorar la visualización final.
 
-Los archivos del dataset no se incluyen en el repositorio debido a su tamaño. El código y la estructura del proyecto permiten reproducir el proceso de limpieza y análisis a partir del dataset original.
+Los archivos de datos originales y procesados no se incluyen en el repositorio debido a su tamaño. El proyecto conserva el código, los notebooks y la estructura necesaria para reproducir el análisis a partir del dataset original.
 
 ## 🎯 Conclusiones generales
 
